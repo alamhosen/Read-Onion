@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Breakfast = () => {
+const Breakfast = ({product}) => {
+    const {name, description, img, price} = product;
     return (
         <div>
-            <h2>This is breakfast</h2>
+            <h2>{name}</h2>
         </div>
     );
 };
